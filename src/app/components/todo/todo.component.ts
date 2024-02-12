@@ -6,6 +6,13 @@ import {Todo} from './../../models/Todo' ;
   styleUrls: ['./todo.component.css']
 })
 export class TodoComponent implements OnInit{
+
+submit(){
+  
+  
+}
+
+
 todos! : Todo[];
 inputTodo: string ='';
   constructor(){ }
@@ -27,7 +34,7 @@ this.todos.map((v, i) =>{
   if(i == id) v. completed  = !v. completed;
 
   return v;
-}
+})
 }
 
 deleteTodo (id:number) {

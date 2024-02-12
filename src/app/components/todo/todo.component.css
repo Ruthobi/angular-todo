@@ -11,35 +11,35 @@
     border-bottom: 0;
 }
 .todo .id{
-    flex: 1 1 20px;
-}
+    margin-right: 100px;
+    }
 .todo.content{
     flex: 1 1 50%;
 }
 .todo.done.content{
     text-decoration: line-through;
 }
-.todo-input{
+#todo-input{
     display: block;
-    width: 100%;
-    padding: 10px 15px;
+    width: 200%;
+    padding: 20px 30px;
     appearance: none;
-    border: none;
-    background-color: white;
-    margin-top: 15px;
+    border: 30px;
+    background-color: whitesmoke;
+    margin-top: 30px;
     font-size: 20px;
     outline: none;
 }
 .todo-submit{
     display: block;
-    width: 100%;
-    max-width: 200px;
+    width: 150%;
+    max-width: 300px;
     appearance: none;
     border: none;
     outline: none;
     background: none;
 
-    background-color: chartreuse;
+    background-color: darkcyan;
     color: white;
     margin: 15px auto;
 

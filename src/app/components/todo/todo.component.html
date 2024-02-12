@@ -1,16 +1,36 @@
-<div class="todos">
-<form>
-<input
-type="text"
-name="input Todo"
-placeholder="Enter your Todo"
-class="todo-input"
-[(ngModel)]="inputTodo"
-/>
- </form>
-</div>
 
-<div class="todos" *ngFor="let todo of todos; let i  =index;" class="todo{{ (todo.completed ? 'done' : '')}}">
+<div class="container-fluid">
+    <form #todo="ngForm" (ngSubmit)="submit()">
+        <div class="todo">
+            <div class="form-group">
+                <input id="todo-input" type="text" class="form-control" name="input-todo" placeholder="Enter your todo " ngmodel>
+            </div>
+            </div>
+            <button class="todo-submit" >Add Todo</button>
+  </form>
+   </div>
+
+
+
+
+
+
+
+
+
+<!-- <div class="todos"> -->
+<!-- <form> -->
+<!-- <input -->
+<!-- type="text" -->
+<!-- name="input Todo" -->
+<!-- placeholder="Enter your Todo" -->
+<!-- class="todo-input" -->
+<!-- [(ngModel)]="inputTodo" -->
+<!-- /> -->
+ <!-- </form> -->
+<!-- </div> -->
+
+<div class="todo" *ngFor="let todo of todos; let i  =index;" class="todo{{ (todo.completed ? 'done' : '')}}">
 <div class="id">{{ i }}</div>
 <div class="content" (click) ="toggleDone(i)">{{ todo.content }}</div>
 <button class="delete" (click)="deleteTodo(i)">Remove</button>

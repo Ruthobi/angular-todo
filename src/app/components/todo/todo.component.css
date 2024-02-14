@@ -1,3 +1,13 @@
+
+.todo-app{
+    background-color: lightgray;
+    width: 700px;
+    height: 450px;
+    padding: 10px;
+    margin-left: 250px;
+}
+
+
 .todo{
     display: flex;
     padding: 10px 15px;
@@ -38,8 +48,9 @@
     border: none;
     outline: none;
     background: none;
+    cursor: pointer;
 
-    background-color: darkcyan;
+    background-color: darkgray;
     color: white;
     margin: 15px auto;
 

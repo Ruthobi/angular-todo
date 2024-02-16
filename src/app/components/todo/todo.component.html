@@ -1,6 +1,6 @@
 <div class="todo-app">
     <div class="container">
-        <form #todo="ngForm">
+        <form #todoForm="ngForm">
             <div class="todo">
                 <div class="form-group">
                     <input id="todo-input" type="text" 
@@ -16,13 +16,20 @@
     
      <div class="todo" *ngFor="let todo of todos; let i = index;" [class.done]="todo.completed">
             <div class="id">{{ i }}</div>
-            <div class="content" (click)="toggleDone(i)">{{ todo.content }}</div>
+            <div *ngIf="!todo.editMode" class="content" (click)="toggleDone(i)">{{ todo.content }}</div>
+            <!-- <input *ngIf="todo.editMode" type="text" [(ngModel)]="todo.content" (blur)="toggleEditMode(i)" /> -->
             <span style="margin-right: 10px;"></span>
-            <button class="edit" (click)="editTodo(i)">Edit</button>
+            <button style="background-color: darkgrey;" class="edit" (click)="editTodo(i)">Edit</button>
             <span style="margin-right: 20px;"></span>
-            <button class="delete" (click)="deleteTodo(i)">Remove</button>
-        </div>
-</div>
+            <button style="background-color: darkgrey;" class="delete" (click)="deleteTodo(i)">Remove</button>
+            <span style="margin-right: 20px;"></span>
+            
+             </div>
+              </div>
+
+
+
+              
 
     
 

@@ -6,8 +6,6 @@
     padding: 10px;
     margin-left: 250px;
 }
-
-
 .todo{
     display: flex;
     padding: 10px 15px;
@@ -25,6 +23,7 @@
     }
 .todo.content{
     flex: 1 1 50%;
+    
 }
 .todo.done.content{
     text-decoration: line-through;
@@ -45,7 +44,7 @@
     width: 150%;
     max-width: 300px;
     appearance: none;
-    border: none;
+    border-radius: 20px;
     outline: none;
     background: none;
     cursor: pointer;
@@ -59,7 +58,13 @@
     font-weight: 700;
 }
 
-
-
+.edit{
+    color: lightyellow;
+    border-radius: 10px;
+}
+.delete{
+    color: crimson;
+    border-radius: 10px;
+}
 
 

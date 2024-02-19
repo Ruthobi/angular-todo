@@ -1,17 +1,27 @@
 
 .todo-app{
-    background-color: lightgray;
+    background-color: lightblue;
     width: 700px;
-    height: 450px;
+    height: 400px;
     padding: 10px;
     margin-left: 250px;
+    }
+
+.todo .form-group{
+    display: flex;
+    align-items: center;
+    /* justify-items: flex-end; */
 }
+
+
 .todo{
     display: flex;
+    align-items: center;
     padding: 10px 15px;
     background-color: white;
     border-bottom: 1px solid whitesmoke;
 }
+
 .todo:nth-child(even){
     background-color: white;
 }
@@ -29,8 +39,8 @@
     text-decoration: line-through;
 }
 #todo-input{
-    display: block;
-    width: 200%;
+    flex: 1;
+    width: 500%;
     padding: 20px 30px;
     appearance: none;
     border: 30px;
@@ -40,31 +50,33 @@
     outline: none;
 }
 .todo-submit{
-    display: block;
-    width: 150%;
-    max-width: 300px;
+    display: flex;
+    width: 10%;
+    /* max-width: 50px; */
     appearance: none;
-    border-radius: 20px;
+    border-radius: 10px;
     outline: none;
     background: none;
     cursor: pointer;
 
-    background-color: darkgray;
+    background-color: lightseagreen;
     color: white;
-    margin: 15px auto;
+    margin: 15 auto;
 
-    padding: 10px 15px;
-    font-size: 18px;
-    font-weight: 700;
+    padding: 5px 5px;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .edit{
-    color: lightyellow;
+    color: whitesmoke;
     border-radius: 10px;
+    
 }
 .delete{
-    color: crimson;
+    color: whitesmoke;
     border-radius: 10px;
+    
 }
 
 
